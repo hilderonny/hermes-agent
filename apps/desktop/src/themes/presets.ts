@@ -278,13 +278,80 @@ export const slateTheme: DesktopTheme = {
   }
 }
 
+/** LCARS — Star Trek Library Computer Access/Retrieval System theme.
+ *  Inspired by the iconic interface designed by Michael Okuda for Star Trek: The Next Generation.
+ *  Same dark palette in light and dark mode — LCARS knows no light theme. */
+export const lcarsTheme: DesktopTheme = {
+  name: 'lcars',
+  label: 'LCARS',
+  description: 'Star Trek LCARS — deep space black, golden-orange accents, condensed type',
+  colors: {
+    background: '#05080F',
+    foreground: '#EBE0C6',
+    card: '#0C1422',
+    cardForeground: '#EBE0C6',
+    muted: '#101B30',
+    mutedForeground: '#8A9BB5',
+    popover: '#0C1422',
+    popoverForeground: '#EBE0C6',
+    primary: '#FF9900',
+    primaryForeground: '#05080F',
+    secondary: '#5566FF',
+    secondaryForeground: '#FFFFFF',
+    accent: '#FFAA00',
+    accentForeground: '#05080F',
+    border: '#FF990033',
+    input: '#FF990044',
+    ring: '#FF9900',
+    midground: '#FF9900',
+    destructive: '#FF2200',
+    destructiveForeground: '#05080F',
+    sidebarBackground: '#03050C',
+    sidebarBorder: '#FF990022',
+    userBubble: '#101B30',
+    userBubbleBorder: '#FF990044'
+  },
+  darkColors: {
+    background: '#05080F',
+    foreground: '#EBE0C6',
+    card: '#0C1422',
+    cardForeground: '#EBE0C6',
+    muted: '#101B30',
+    mutedForeground: '#8A9BB5',
+    popover: '#0C1422',
+    popoverForeground: '#EBE0C6',
+    primary: '#FF9900',
+    primaryForeground: '#05080F',
+    secondary: '#5566FF',
+    secondaryForeground: '#FFFFFF',
+    accent: '#FFAA00',
+    accentForeground: '#05080F',
+    border: '#FF990033',
+    input: '#FF990044',
+    ring: '#FF9900',
+    midground: '#FF9900',
+    destructive: '#FF2200',
+    destructiveForeground: '#05080F',
+    sidebarBackground: '#03050C',
+    sidebarBorder: '#FF990022',
+    userBubble: '#101B30',
+    userBubbleBorder: '#FF990044'
+  },
+  typography: {
+    fontSans: '"Oswald", "Segoe WPC", "Segoe UI", -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji',
+    fontMono: '"Cascadia Code", "JetBrains Mono", "SF Mono", ui-monospace, Menlo, Monaco, Consolas, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji',
+    fontUrl: 'https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap'
+  }
+}
+
 export const BUILTIN_THEMES: Record<string, DesktopTheme> = {
   nous: nousTheme,
   midnight: midnightTheme,
   ember: emberTheme,
   mono: monoTheme,
   cyberpunk: cyberpunkTheme,
-  slate: slateTheme
+  slate: slateTheme,
+  lcars: lcarsTheme
 }
 
 export const BUILTIN_THEME_LIST = Object.values(BUILTIN_THEMES)
